@@ -3803,8 +3803,8 @@ input, select, textarea {
 	}
 	/* Force icon container to original Stellar icon size */
 	.icon.custom-icon {
-	    width: 15rem;
-	    height: 15rem;
+	    width: 20rem;
+	    height: 20rem;
 	    display: inline-flex;
 	    align-items: center;
 	    justify-content: center;
@@ -3819,6 +3819,7 @@ input, select, textarea {
 	    object-fit: cover; /* or contain */
 	    border-radius: 50%;
 	}
+
 
 
 
