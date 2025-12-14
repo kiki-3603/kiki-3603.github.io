@@ -3819,28 +3819,63 @@ input, select, textarea {
 	    border-radius: 50%;
 	}
 
-	/* Publication figures: rectangular and left-aligned */
-	#publications .spotlight .image {
-	    border-radius: 0;      /* remove any inherited rounding */
-		align-items: left;
-	    text-align: left;
+/* =========================================================
+   Publications section (custom, isolated)
+   ========================================================= */
+
+	#publications .pub-list {
+	    display: flex;
+	    flex-direction: column;
+	    gap: 3rem;
 	}
 	
-	#publications .spotlight .image img {
-	    border-radius: 0;      /* force rectangle */
-	    object-fit: contain;  /* show full figure, no cropping */
+	#publications .pub-item {
+	    display: flex;
+	    align-items: flex-start;
+	    gap: 2rem;
+	}
+	
+	#publications .pub-figure {
+	    flex: 0 0 280px;   /* fixed figure width */
+	}
+	
+	#publications .pub-figure img {
 	    width: 100%;
 	    height: auto;
 	    display: block;
+	    border-radius: 0;       /* force rectangular */
+	    object-fit: contain;   /* show full figure */
 	}
-
-
-
-
-
-
-
-
-
-
-
+	
+	#publications .pub-content {
+	    flex: 1;
+	}
+	
+	#publications .pub-content h3 {
+	    margin-top: 0;
+	}
+	
+	/* Responsive: stack image above text on small screens */
+	@media screen and (max-width: 736px) {
+	    #publications .pub-item {
+	        flex-direction: column;
+	    }
+	
+	    #publications .pub-figure {
+	        width: 100%;
+	        max-width: 100%;
+	    }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
