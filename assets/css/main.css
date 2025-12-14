@@ -3819,6 +3819,20 @@ input, select, textarea {
 	    border-radius: 50%;
 	}
 
+	/* Publication figures: rectangular and left-aligned */
+	#publications .spotlight .image {
+	    border-radius: 0;      /* remove any inherited rounding */
+	    text-align: left;
+	}
+	
+	#publications .spotlight .image img {
+	    border-radius: 0;      /* force rectangle */
+	    object-fit: contain;  /* show full figure, no cropping */
+	    width: 100%;
+	    height: auto;
+	    display: block;
+	}
+
 
 
 
